@@ -61,7 +61,7 @@ def part_two(text):
     return total_sum
 
 
-def read_input(file_name):
+def read_data(file_name):
     current_dir_path = os.path.dirname(os.path.abspath(__file__))
     parent_dir_path = os.path.dirname(current_dir_path)
     file_path = os.path.join(parent_dir_path, "data", file_name)
@@ -72,6 +72,6 @@ def read_input(file_name):
 
 
 if __name__ == "__main__":
-    input = read_input("day1.txt")
-    print(part_one(input))
-    print(part_two(input))
+    data = read_data("day1.txt")
+    print(part_one(data))
+    print(part_two(data))
