@@ -1,2 +1,2 @@
-# AoC-2020
-Advent Of Code 2020
+# AoC
+Advent Of Code
