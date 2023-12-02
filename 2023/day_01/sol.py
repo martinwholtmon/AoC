@@ -1,4 +1,4 @@
-from helper import read_input
+import os
 
 
 def letters_to_numbers(line, reverse):
@@ -59,6 +59,16 @@ def part_two(text):
         second = get_numbers_converted(line, True)[0]
         total_sum += int(first + second)
     return total_sum
+
+
+def read_input(file_name):
+    current_dir_path = os.path.dirname(os.path.abspath(__file__))
+    parent_dir_path = os.path.dirname(current_dir_path)
+    file_path = os.path.join(parent_dir_path, "data", file_name)
+
+    with open(file_path, "r") as file:
+        data = file.read()
+    return data
 
 
 if __name__ == "__main__":
