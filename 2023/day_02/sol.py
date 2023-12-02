@@ -17,7 +17,7 @@ def parse_game(game) -> dict:
     # split game nr and game parts
     parts = game.split(":")
 
-    game_nr = int(re.search(r"Game (\d+)", parts[0]).group(1))
+    game_nr = int(parts[0].split()[1])
     game_sets = parts[1].split(";")
 
     # count
